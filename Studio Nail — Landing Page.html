@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Nail — Unhas que contam a sua história</title>
+<meta name="description" content="Studio Nail: alongamento, esmaltação em gel e nail art com acabamento impecável. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { display: ['Gloock','Georgia','serif'], body: ['Jost','system-ui','sans-serif'] },
+  colors: { paper:'var(--paper)', ink:'var(--ink)', wine:'var(--wine)', winedk:'var(--winedk)', gold:'var(--gold)', blush:'var(--blush)', line:'var(--line)', onwine:'var(--onwine)' }
+} } }
+</script>
+<style>
+  :root { --paper:#fbf6ef; --ink:#2a0f17; --wine:#5c1a2b; --winedk:#44121f; --gold:#b8923f; --blush:#f1e2dc; --line:#e2d3c6; --onwine:#fbf6ef;
+    color-scheme: light; box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--paper); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper:#170a0e; --ink:#f5ebe3; --wine:#7a2a3e; --winedk:#5c1a2b; --gold:#d6b165; --blush:#26121a; --line:#3d252c; --onwine:#fbf6ef; color-scheme: dark; } }
+  :root[data-theme="dark"] { --paper:#170a0e; --ink:#f5ebe3; --wine:#7a2a3e; --winedk:#5c1a2b; --gold:#d6b165; --blush:#26121a; --line:#3d252c; --onwine:#fbf6ef; color-scheme: dark; }
+  html { scroll-behavior: smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body { background: var(--paper); color: var(--ink); font-family: 'Jost', system-ui, sans-serif; overflow-x: hidden; }
+  .btn-wa { background: var(--wine); color: var(--onwine); transition: background .2s, transform .2s; }
+  .btn-wa:hover { background: var(--winedk); transform: translateY(-2px); }
+  .btn-gold { background: var(--gold); color: #2a0f17; transition: transform .2s, filter .2s; }
+  .btn-gold:hover { transform: translateY(-2px); filter: brightness(1.08); }
+  .nail { border-radius: 999px 999px 18px 18px / 70% 70% 18px 18px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto } .btn-wa:hover,.btn-gold:hover { transform:none } }
+</style>
+</head>
+<body class="font-body antialiased">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3 17l-1 5 5.200-1.400A11 11 0 1 0 20.500 3.500z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8c0 4 3 7 7 7l1.500-2-2.500-1.200-1 1c-1.200-.5-2.200-1.500-2.700-2.700l1-1L11 7.500 9 8z" fill="currentColor"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.500" cy="6.500" r="1.100" fill="currentColor"/></symbol>
+</svg>
+
+<!-- NAV -->
+<header class="absolute top-0 inset-x-0 z-20">
+  <div class="mx-auto max-w-6xl px-5 py-6 flex items-center justify-between">
+    <a href="#top" class="font-display text-xl">Studio <span class="text-gold">Nail</span></a>
+    <nav class="hidden md:flex gap-8 text-sm opacity-75">
+      <a href="#servicos" class="hover:text-gold">Serviços</a>
+      <a href="#galeria" class="hover:text-gold">Galeria</a>
+      <a href="#diferenciais" class="hover:text-gold">Diferenciais</a>
+      <a href="#agendar" class="hover:text-gold">Agendar</a>
+    </nav>
+    <a href="https://instagram.com/studionail" target="_blank" rel="noopener" aria-label="Instagram" class="md:hidden"><svg width="22" height="22"><use href="#ig"/></svg></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative overflow-hidden min-h-[100svh] flex items-end">
+  <div aria-hidden="true" class="absolute right-[-14%] sm:right-[4%] top-[9%] w-[78%] sm:w-[44%] max-w-md aspect-[3/4] bg-wine rounded-t-full"></div>
+  <div aria-hidden="true" class="absolute right-[-6%] sm:right-[8%] top-[13%] w-[78%] sm:w-[44%] max-w-md aspect-[3/4] rounded-t-full border border-gold"></div>
+  <div aria-hidden="true" class="absolute right-[6%] sm:right-[14%] top-[22%] md:top-[26%] flex items-end gap-2 sm:gap-3 rotate-[-8deg]">
+    <span class="nail block w-9 h-24 sm:w-12 sm:h-32 bg-blush"></span>
+    <span class="nail block w-10 h-32 sm:w-14 sm:h-44 bg-gold"></span>
+    <span class="nail block w-10 h-36 sm:w-14 sm:h-48 bg-paper"></span>
+    <span class="nail block w-9 h-28 sm:w-12 sm:h-36 bg-gold opacity-70"></span>
+    <span class="nail block w-8 h-20 sm:w-10 sm:h-24 bg-blush"></span>
+  </div>
+  <div class="relative mx-auto max-w-6xl w-full px-5 pt-40 pb-14 md:pb-24">
+    <p class="text-gold uppercase tracking-[.3em] text-xs mb-6">Nail design · hora marcada</p>
+    <h1 class="font-display leading-[.92] tracking-tight text-[3.6rem] sm:text-8xl md:text-[8.5rem]">
+      Studio<br><span class="text-wine md:ml-24 inline-block" style="color:var(--wine)">Nail<span class="text-gold">.</span></span>
+    </h1>
+    <p class="mt-8 max-w-sm text-lg leading-relaxed opacity-80">
+      Unhas que combinam com a sua rotina e com a sua personalidade. Acabamento impecável, higiene rigorosa e um tempo só seu.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
+      <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Nail." target="_blank" rel="noopener" class="btn-wa inline-flex items-center justify-center gap-3 px-7 py-4 font-medium rounded-full">
+        <svg width="20" height="20"><use href="#wa"/></svg> Agendar pelo WhatsApp
+      </a>
+      <a href="https://instagram.com/studionail" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-7 py-4 border border-ink/30 hover:border-gold hover:text-gold rounded-full transition">
+        <svg width="20" height="20"><use href="#ig"/></svg> @studionail
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-24 md:py-36">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="md:grid md:grid-cols-12 gap-8 mb-14">
+      <div class="md:col-span-6">
+        <p class="text-gold uppercase tracking-[.3em] text-xs mb-5">Serviços</p>
+        <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight">Do básico ao <span style="color:var(--wine)">assinatura.</span></h2>
+      </div>
+      <p class="md:col-span-4 md:col-start-9 mt-5 md:mt-auto opacity-70">Cada atendimento começa com uma conversa: formato, comprimento e estilo de vida definem o que fica melhor em você.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-6 gap-4">
+      <article class="sm:col-span-4 bg-wine text-onwine rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
+        <span class="text-gold text-xs uppercase tracking-[.25em]">Mais pedido</span>
+        <h3 class="font-display text-3xl md:text-4xl mt-3">Alongamento em gel</h3>
+        <p class="mt-3 max-w-md opacity-80">Estrutura leve e resistente, no formato que você escolher. Dura até 25 dias com a manutenção em dia.</p>
+        <p class="font-display text-3xl text-gold mt-6">a partir de R$ 180</p>
+      </article>
+      <article class="sm:col-span-2 bg-blush rounded-[2rem] p-8">
+        <h3 class="font-display text-2xl">Esmaltação em gel</h3>
+        <p class="mt-3 text-sm opacity-75">Brilho espelhado e cor intensa por até 3 semanas.</p>
+        <p class="font-display text-2xl mt-5" style="color:var(--wine)">R$ 70</p>
+      </article>
+      <article class="sm:col-span-2 border border-line rounded-[2rem] p-8">
+        <h3 class="font-display text-2xl">Blindagem</h3>
+        <p class="mt-3 text-sm opacity-75">Reforço para unhas naturais que quebram ou descascam.</p>
+        <p class="font-display text-2xl mt-5" style="color:var(--wine)">R$ 110</p>
+      </article>
+      <article class="sm:col-span-2 border border-line rounded-[2rem] p-8">
+        <h3 class="font-display text-2xl">Nail art</h3>
+        <p class="mt-3 text-sm opacity-75">Francesinha, cromados, pedrarias e desenhos feitos à mão.</p>
+        <p class="font-display text-2xl mt-5" style="color:var(--wine)">+ R$ 40</p>
+      </article>
+      <article class="sm:col-span-2 bg-gold text-ink rounded-[2rem] p-8" style="color:#2a0f17">
+        <h3 class="font-display text-2xl">Manutenção</h3>
+        <p class="mt-3 text-sm opacity-80">Reposição e acabamento para manter o alongamento perfeito.</p>
+        <p class="font-display text-2xl mt-5">R$ 120</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="bg-blush py-24 md:py-36">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+      <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight max-w-xl">Trabalhos que <span style="color:var(--wine)">falam sozinhos.</span></h2>
+      <a href="https://instagram.com/studionail" target="_blank" rel="noopener" class="underline underline-offset-4 decoration-gold hover:text-gold">Ver tudo no Instagram →</a>
+    </div>
+    <!-- Troque cada bloco por <img class="w-full h-full object-cover" src="sua-foto.jpg" alt="..."> -->
+    <div class="grid grid-cols-6 grid-rows-[repeat(4,8.5rem)] md:grid-rows-[repeat(3,13rem)] gap-3">
+      <figure class="col-span-3 row-span-2 rounded-t-[8rem] rounded-b-2xl relative" style="background:var(--wine)"><figcaption class="absolute bottom-3 left-4 text-xs uppercase tracking-widest text-onwine/70">Gel vinho</figcaption></figure>
+      <figure class="col-span-3 row-span-1 rounded-2xl relative bg-gold"><figcaption class="absolute bottom-3 left-4 text-xs uppercase tracking-widest text-[#2a0f17]/70">Cromado dourado</figcaption></figure>
+      <figure class="col-span-2 row-span-2 rounded-t-full rounded-b-2xl relative bg-paper border border-line"><figcaption class="absolute bottom-3 left-4 text-xs uppercase tracking-widest opacity-60">Francesinha</figcaption></figure>
+      <figure class="col-span-1 row-span-1 rounded-2xl bg-winedk"></figure>
+      <figure class="col-span-3 row-span-1 rounded-2xl relative border border-gold"><figcaption class="absolute bottom-3 left-4 text-xs uppercase tracking-widest opacity-60">Nail art</figcaption></figure>
+      <figure class="col-span-4 row-span-1 rounded-2xl relative" style="background:var(--paper)"><figcaption class="absolute bottom-3 left-4 text-xs uppercase tracking-widest opacity-60">Alongamento natural</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais" class="bg-wine text-onwine py-24 md:py-36">
+  <div class="mx-auto max-w-6xl px-5 grid md:grid-cols-12 gap-12">
+    <div class="md:col-span-5 md:sticky md:top-10 self-start">
+      <p class="text-gold uppercase tracking-[.3em] text-xs mb-5">Por que o Studio Nail</p>
+      <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight">Detalhe não é luxo. <span class="text-gold">É regra.</span></h2>
+    </div>
+    <ul class="md:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-12">
+      <li><span class="font-display text-5xl text-gold">01</span><h3 class="font-display text-2xl mt-3">Biossegurança</h3><p class="mt-2 opacity-80 text-sm">Materiais esterilizados em autoclave e lixas individuais para cada cliente.</p></li>
+      <li class="sm:mt-12"><span class="font-display text-5xl text-gold">02</span><h3 class="font-display text-2xl mt-3">Hora marcada</h3><p class="mt-2 opacity-80 text-sm">Atendimento exclusivo, sem atraso e sem sala cheia. O seu horário é seu.</p></li>
+      <li><span class="font-display text-5xl text-gold">03</span><h3 class="font-display text-2xl mt-3">Produtos premium</h3><p class="mt-2 opacity-80 text-sm">Géis e esmaltes de alta pigmentação que respeitam a saúde da unha.</p></li>
+      <li class="sm:mt-12"><span class="font-display text-5xl text-gold">04</span><h3 class="font-display text-2xl mt-3">Ambiente acolhedor</h3><p class="mt-2 opacity-80 text-sm">Café, música boa e poltronas confortáveis. Aqui você respira.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="py-24 md:py-36">
+  <div class="mx-auto max-w-6xl px-5">
+    <p class="text-gold uppercase tracking-[.3em] text-xs mb-10">Clientes que voltam</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <blockquote class="border border-line rounded-[2rem] p-8">
+        <p class="font-display text-xl leading-snug">“Nunca tive unhas tão bonitas e resistentes. Já virou meu momento favorito do mês.”</p>
+        <footer class="mt-6 text-sm opacity-65">Mariana C.</footer>
+      </blockquote>
+      <blockquote class="bg-blush rounded-[2rem] p-8 md:mt-14">
+        <p class="font-display text-xl leading-snug">“Atendimento pontual, ambiente lindo e acabamento perfeito. Recebo elogio em toda parte.”</p>
+        <footer class="mt-6 text-sm opacity-65">Beatriz L.</footer>
+      </blockquote>
+      <blockquote class="border border-gold rounded-[2rem] p-8 md:mt-28">
+        <p class="font-display text-xl leading-snug">“Levei uma referência do Pinterest e saiu exatamente como eu imaginava. Sou cliente fiel.”</p>
+        <footer class="mt-6 text-sm opacity-65">Larissa T.</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="agendar" class="relative overflow-hidden bg-blush py-24 md:py-36">
+  <div aria-hidden="true" class="absolute -right-16 -top-10 w-72 h-96 md:w-[26rem] md:h-[34rem] rounded-b-full border border-gold"></div>
+  <div class="relative mx-auto max-w-6xl px-5 grid md:grid-cols-12 gap-10 items-end">
+    <div class="md:col-span-8">
+      <p class="text-gold uppercase tracking-[.3em] text-xs mb-5">Agendamento</p>
+      <h2 class="font-display text-5xl md:text-8xl leading-[.95] tracking-tight">Seu horário <span style="color:var(--wine)">está esperando.</span></h2>
+      <p class="mt-8 max-w-md text-lg opacity-80">As agendas lotam rápido. Chame no WhatsApp, conte o que você sonha para as suas unhas e a gente reserva o seu momento.</p>
+    </div>
+    <div class="md:col-span-4 flex flex-col gap-3">
+      <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Nail." target="_blank" rel="noopener" class="btn-wa inline-flex items-center justify-center gap-3 px-7 py-4 font-medium rounded-full">
+        <svg width="20" height="20"><use href="#wa"/></svg> Agendar agora
+      </a>
+      <a href="https://instagram.com/studionail" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-7 py-4 border border-ink/30 hover:border-gold hover:text-gold rounded-full transition">
+        <svg width="20" height="20"><use href="#ig"/></svg> Ver trabalhos no Instagram
+      </a>
+      <p class="text-xs opacity-60 mt-3">Seg a Sáb · 09h às 19h · Rua das Flores, 210 — Centro</p>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 pb-28 md:pb-8 border-t border-line">
+  <div class="mx-auto max-w-6xl px-5 flex flex-col sm:flex-row justify-between gap-2 text-sm opacity-60">
+    <span class="font-display">Studio <span class="text-gold">Nail</span></span>
+    <span>© 2026 Studio Nail. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Nail." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="btn-gold fixed right-4 z-30 w-14 h-14 rounded-full grid place-items-center shadow-lg" style="bottom:calc(1rem + env(safe-area-inset-bottom, 0px))">
+  <svg width="28" height="28"><use href="#wa"/></svg>
+</a>
+
+</body>
+</html>
